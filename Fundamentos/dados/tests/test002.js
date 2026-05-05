@@ -6,3 +6,6 @@ console.log("Produto: " + nome + ", categoria: " + categoria);
 console.log("Produto: " + nome 
 			+ ", categoria: " + categoria
 			+ ", Preço: " + preco);
+
+nome = 5000
+console.log(nome)

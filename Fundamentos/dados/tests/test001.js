@@ -8,3 +8,6 @@ console.log(quantidade);
 console.log(preco);
 console.log(imposto)
 console.log(precoFinal);
+
+produto = 5000
+console.log(produto)
