@@ -1,13 +1,12 @@
-let nome_meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
-    'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
-]
-const nome_mes = numero => {
-    if(numero >= 1 & numero <=12){
-        return nome_meses[numero-1]
+function resolverFormulaBhaskara(a, b, c){
+    delta = (b**2)-(4*a*c)
+    if (delta >= 0){
+        x1 = (-b + Math.sqrt(delta))/(2*a)
+        x2 = (-b - Math.sqrt(delta))/(2*a)
+        return [x1, x2]
     }
-    return null
+    return 'Delta é negativo!'
 }
 
-console.log(nome_mes(1))
-console.log(nome_mes(4))
-console.log(nome_mes(13))
+console.log(resolverFormulaBhaskara(3,-5,12))
+console.log(resolverFormulaBhaskara(1,-5,6))

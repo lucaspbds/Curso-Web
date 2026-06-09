@@ -1,7 +1,14 @@
-function receber_primeiro_e_ultimo_elemento(lista){
-    index_ultimo = lista.length - 1
-    return [lista[0], lista[index_ultimo]]
+let fruta = 'Kiwi'
+switch (fruta.toLowerCase()){
+    case 'maçã':
+        console.log('Não vendemos esta fruta aqui!')
+        break
+    case 'kiwi':
+        console.log('Estamos com escassez de kiwis')
+        break
+    case 'melancia':
+        console.log('Aqui está, são 3 reais o quilo')
+        break
+    default:
+        console.log('Fruta não disponível!')
 }
-console.log(receber_primeiro_e_ultimo_elemento([7,14,'olá']))
-console.log(receber_primeiro_e_ultimo_elemento([-100, 'aplicativo', 16]))
-console.log(receber_primeiro_e_ultimo_elemento(['Oi', 4,'Leão', 'Barco']))

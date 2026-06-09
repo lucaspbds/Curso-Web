@@ -1,5 +1,5 @@
-const cumprimentar = texto => {
-    console.log(`Olá, ${texto}!`)
+//Divisão exata
+const divisao = (dividendo, divisor) => {
+    console.log(`${dividendo} / ${divisor} = ${Math.trunc(dividendo/divisor)} (Resto=${dividendo%divisor})`)
 }
-cumprimentar('Leonardo')
-cumprimentar('Maria')
+divisao(5,2)

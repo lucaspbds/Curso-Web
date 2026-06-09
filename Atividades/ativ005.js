@@ -1,9 +1,6 @@
-function converter_idade_em_dias(idade){
-    if (typeof idade == 'number'){
-        return idade*365
-    }
-    return NaN
+function formatoMoeda(moeda='R$',valor){
+    const valor_formatado = `${valor.toFixed(2)}`.replace('.',',')
+    return `${moeda}${valor_formatado}`
 }
-console.log(converter_idade_em_dias(25))
-console.log(converter_idade_em_dias(70))
-console.log(converter_idade_em_dias('a'))
+console.log(0.1+0.2)
+console.log(formatoMoeda('R$',0.1+0.2))

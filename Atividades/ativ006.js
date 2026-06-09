@@ -1,5 +1,7 @@
-const calcular_salario = (horas, valor_hora) => {
-    return (horas*valor_hora).toFixed(2)
+function calcularMontanteJurosSimples (capitalInicial, taxaJuros, tempo){
+    return `${capitalInicial*(1+taxaJuros*tempo)}`
 }
-let salario = calcular_salario(150, 40.5)
-console.log(`Salário igual a R$ ${salario.replace('.',',')}`)
+function calcularMontanteJurosCompostos (capitalInicial, taxaJuros, tempo){
+    return`${capitalInicial*((1+i)**tempo)}`
+}
+

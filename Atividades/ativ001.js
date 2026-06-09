@@ -1,25 +1,7 @@
-// Desafio sentença e bloco (aula22)
-
-// Bloco dos números ímpares
-{
-    console.log(1);
-    console.log(3);
-    console.log(5);
-    console.log(7);
-    console.log(9);
+function operador_aritmetico(a, b){
+    return `Soma: ${a}+${b} = ${a+b}
+Subtração: ${a}-${b} = ${a-b}
+Multiplicação: ${a}*${b} = ${a*b}
+Divisão: ${a}/${b} = ${a/b}`
 }
-
-console.log('-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-
-// Bloco dos números pares
-{
-    
-    console.log(2);
-    console.log(4);
-    console.log(6);
-    console.log(8);
-    console.log(10);
-}
-
-console.log('-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-console.log('Programa finalizado!')
+console.log(operador_aritmetico(5,2))
