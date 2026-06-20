@@ -15,5 +15,6 @@ function progressao_geometrica(n, a1, r){
     let soma = ((a1 * ((r**n) - 1)) / (r - 1))
     return {lista_termos, soma}
 }
-console.log(progressao_aritmetica(3, 1, 1))
-console.log(progressao_geometrica(3,1,2))
+console.log(progressao_aritmetica(10, 10, 15))
+console.log('----------------')
+console.log(progressao_geometrica(10, 5, 3))

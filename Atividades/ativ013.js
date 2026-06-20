@@ -3,19 +3,7 @@ function tipoDoDia(dia){
         case 1:
             console.log('É um fim de semana!')
             break
-        case 2:
-            console.log('É um dia útil!')
-            break
-        case 3:
-            console.log('É um dia útil!')
-            break
-        case 4:
-            console.log('É um dia útil!')
-            break
-        case 5:
-            console.log('É um dia útil!')
-            break
-        case 6:
+        case 2: case 3: case 4: case 5: case 6:
             console.log('É um dia útil!')
             break
         case 7:

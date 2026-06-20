@@ -1,8 +1,8 @@
 const multiplicar_por = (lista_num, num) => {
     let lista_temp = []
-    for(index in lista_num){
-        lista_temp.push(lista_num[index]*num)
-    }
+    lista_num.forEach(elemento => {
+        lista_temp.push(elemento * num)
+    });
         return lista_temp
 }
 
@@ -12,5 +12,6 @@ const funcao = (lista_num, num) => {
     }
 }
 
-console.log(funcao([1,2,3], 6))
+let vetor = [1, 2, 3, 4, 5]
+console.log(funcao(vetor, 11))
 

@@ -8,4 +8,5 @@ function intervalo(lista_num){
     }
     console.log({cont_dentro, cont_fora})
 }
-intervalo([5,10,25,15,1, 9])
+let vetor = [ 7, 8, 9, 10, 11, 12, 16, 17, 18, 19, 20, 21]
+intervalo(vetor)

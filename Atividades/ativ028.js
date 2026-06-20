@@ -8,4 +8,4 @@ const ehParOuImpar = lista_num => {
     }
     return {cont_par,cont_impar}
 }
-console.log(ehParOuImpar([4,6,3,1,8]))
+console.log(ehParOuImpar([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]))

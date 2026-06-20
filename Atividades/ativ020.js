@@ -22,4 +22,5 @@ const exibirResultado = dict => {
     }
 }
 
-dinheiroTrocado(18)
+
+dinheiroTrocado(153)

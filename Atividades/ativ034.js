@@ -1,18 +1,9 @@
 function contem_mesmos_caracteres(str1, str2){
-    let string_menor = ''
-    let string_maior = ''
     let mesmos_caracteres
-    if(str1.length >= str2.length){
-        string_maior = str1.toLowerCase()
-        string_menor = str2.toLowerCase()
-    }else{
-        string_maior = str2.toLowerCase()
-        string_menor = str1.toLowerCase()
-    }
-    for(i in string_menor){
+    for(i in str1.toLowerCase()){
         mesmos_caracteres = false
-        for(j in string_maior){
-            if(string_menor[i] == string_maior[j]){
+        for(j in str2.toLowerCase()){
+            if(str1[i] == str2[j]){
                 mesmos_caracteres = true
                 break
             }
@@ -25,5 +16,6 @@ function contem_mesmos_caracteres(str1, str2){
 }
 
 console.log(contem_mesmos_caracteres('casa', 'hotel'))
-console.log(contem_mesmos_caracteres('omelete', 'ovo'))
-console.log(contem_mesmos_caracteres('ovário', 'Ovo'))
+console.log(contem_mesmos_caracteres('abc','cba'))
+console.log(contem_mesmos_caracteres('abcdf', 'dcba'))
+

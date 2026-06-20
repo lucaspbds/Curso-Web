@@ -32,7 +32,7 @@ function transformarListaStringEmListaNumber(lista_string){
     return lista_temp
 }
 
-let pontuacoes_string = "10 20 20 8 25 3 0 30 1"
+let pontuacoes_string = "30 40 20 4 51 25 42 38 56 0"
 console.log(calcularProgresso(pontuacoes_string))
 
 pontuacoes_string = "5 10 25 30 0 1 2"

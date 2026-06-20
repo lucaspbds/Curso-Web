@@ -7,4 +7,5 @@ function contadorNumeroNegativo(lista_num){
     }
     console.log(`Quantidade de números negativos: ${cont_negativos}`)
 }
-contadorNumeroNegativo([5,6,3,-1,2,-8])
+vetor =  [10, 5, -7, 3, -1, 3, -11, -20, 6, 9]
+contadorNumeroNegativo(vetor)

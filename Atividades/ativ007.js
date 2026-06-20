@@ -8,5 +8,5 @@ function resolverFormulaBhaskara(a, b, c){
     return 'Delta é negativo!'
 }
 
-console.log(resolverFormulaBhaskara(3,-5,12))
-console.log(resolverFormulaBhaskara(1,-5,6))
+console.log(resolverFormulaBhaskara(1, 3, 2))
+console.log(resolverFormulaBhaskara(3, 1, 2))

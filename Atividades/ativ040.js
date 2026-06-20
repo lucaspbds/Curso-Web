@@ -9,10 +9,16 @@ const mostrarConceitoNota = lista_notas => {
         }else{
             if(nota <= 8.9){
                 resultado.push([nota, 'Conceito B'])
-                }else{resultado.push([nota, 'Conceito A'])}
+                }else{
+                    if(nota <= 10){
+                        resultado.push([nota, 'Conceito A'])
+                    }else{resultado.push([nota, 'Nota inválida'])}
+                }
             }
         }
     }
     return resultado
 }
-console.log(mostrarConceitoNota([5.6,7.5,8.0]))
+
+let notas = [10, 13, 9, 8.2, 2.5, 7.7, 6.8]
+console.log(mostrarConceitoNota(notas))

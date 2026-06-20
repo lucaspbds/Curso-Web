@@ -9,7 +9,7 @@ function calcularAprovacao(cod_aluno, notas){
             somador += notas[index]*3
         }
     }
-    let media = (somador/divisor).toFixed(1)
+    let media = (somador/divisor).toFixed(2)
     exibirResultado(cod_aluno, notas, media)
 }
 const maior_numero = lista_num => {
@@ -22,22 +22,14 @@ const maior_numero = lista_num => {
     return index_maior_num
 }
 const exibirResultado = (cod_aluno, notas, media) => {
-    if(media >= 5){
-        console.log(`
+    console.log(`
             Cod do aluno: ${cod_aluno}
             Notas do aluno: ${notas}
             Média: ${media}
-            Situação: Aprovado`)
-    }else{
-        console.log(`
-            Cod do aluno: ${cod_aluno}
-            Notas do aluno: ${notas}
-            Média: ${media}
-            Situação: Reprovado`)
-    }
+            Situação: ${media>=5 ? 'Aprovado': 'Reprovado'}`)
 }
-let cod_aluno = 5
-let notas = [10,5,6]
+let cod_aluno = 123
+let notas = [2.8, 6, 3.5]
 while (cod_aluno >= 0){
     calcularAprovacao(cod_aluno, notas)
     cod_aluno -= 1
